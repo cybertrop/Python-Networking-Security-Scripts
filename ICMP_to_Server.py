@@ -5,7 +5,7 @@
 import os
 
 hostname = "www.google.com"
-response = os.system("ping -c 1" + hostname)
+response = os.system("ping -c 1" + hostname) # the system function creates a shell on the client you are working from
 
 if response == 0:
   print hostname, "is up and responding..." # ICMP response will send a non-zero number if it fails 
