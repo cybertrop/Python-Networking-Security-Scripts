@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 # This is a script creating a UDP Client on the fly; remember connectionless ...
+# Still a little buggy...working on it...
 
 # Importing the appropriate module
 import socket
