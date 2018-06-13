@@ -1,4 +1,4 @@
-#/usr/bin/Python
+#!/usr/bin/Python
 
 # Basic Python ICMP to a Domain
 
