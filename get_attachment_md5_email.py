@@ -1,14 +1,16 @@
 # Shoutout to AB for this one; working to modify and smoothen
 
-import email
-import sys
-import hashlib
-import base64
-
+# This is a script to retrieve the md5 hash of an email attachment. 
+# Think static analysis of malicious emails...
 
 # Function extract_payload that extracts the md5 hash of the email attachment and returns the hash as a string
 # Arguments: Payload from email
 # Output: Hash
+
+import email
+import sys
+import hashlib
+import base64
 
 def extract_payload(payload_to_extract):
 
