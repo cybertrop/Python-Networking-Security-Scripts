@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+# Please note this doesn't handle HTTP well; import requests for HTTPS like functioning
 # Simple TCP Client Script
 
 # Import appropriate module
