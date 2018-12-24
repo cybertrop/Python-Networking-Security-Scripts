@@ -1,5 +1,7 @@
 # Python script to generate an HTML file that displays table of data from a CSV file with 3 fields: MD5, Hostname and Time
 
+#!/bin/python
+
 from IPython.display import HTML
 import matplotlib.pyplot as plt
 import pandas as pd
