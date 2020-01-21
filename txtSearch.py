@@ -22,13 +22,13 @@ def intro():
 
 def fileCheck(fileToScan):
 	try:
-		fileObject = open(fileToScan, 'r')
+		fileObject = open(fileToScan, 'r') # Creating a fileObject after reading the scanned text file
 	except FileNotFoundError:
 		print('\nCould not find the file you typed: ' + str(sys.argv[1]))
 		sys.exit()
-	desiredPattern = re.compile(input('''\nPlease type a regex expression to search on. 
+	desiredPattern = re.compile(input('''\nPlease type a regex expression to search on. # Inputting the desired regex search pattern
 		\nFor example the following regex: [a-z].* '''))
-	matchObject = desiredPattern.search(fileObject.read())
+	matchObject = desiredPattern.search(fileObject.read()) # Match object created from reading the text file object
 	try:
 		print(matchObject.group())
 	except AttributeError:
